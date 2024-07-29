@@ -26,15 +26,23 @@ const Applicant = () => {
     }
 
     if (isError) {
-        return <h2 className="">{error?.message}</h2>;
+        return (
+            <h2 className="text-lg md:text-2xl text-center font-bold mt-24 text-red-600">
+                No Applications Found
+            </h2>
+        );
     }
 
     if (jobs) {
         console.log(jobs);
     }
 
-    if (!jobs?.length === 0) {
-        return <h2 className="">No job found</h2>;
+    if (!jobs?.result?.length) {
+        return (
+            <h2 className="text-lg md:text-3xl text-center font-bold mt-24 text-red-600">
+                No Job Found
+            </h2>
+        );
     }
 
     return (

@@ -107,11 +107,11 @@ const AddJob = () => {
                                             message: "Job Positon is required",
                                         },
                                         maxLength: {
-                                            value: 100,
-                                            message: "Too long (max 100char)",
+                                            value: 1000,
+                                            message: "Too long (max 1000char)",
                                         },
                                         minLength: {
-                                            value: 3,
+                                            value: 1,
                                             message: "Too short (max 3char)",
                                         },
                                     })}
@@ -137,11 +137,11 @@ const AddJob = () => {
                                             message: "Job Company is required",
                                         },
                                         maxLength: {
-                                            value: 100,
+                                            value: 1000,
                                             message: "Too long (max 100char)",
                                         },
                                         minLength: {
-                                            value: 3,
+                                            value: 1,
                                             message: "Too short (max 3char)",
                                         },
                                     })}
@@ -167,11 +167,11 @@ const AddJob = () => {
                                             message: "Job Location is required",
                                         },
                                         maxLength: {
-                                            value: 100,
+                                            value: 1000,
                                             message: "Too long (max 100char)",
                                         },
                                         minLength: {
-                                            value: 3,
+                                            value: 1,
                                             message: "Too short (max 3char)",
                                         },
                                     })}
@@ -306,7 +306,7 @@ const AddJob = () => {
                                             message: "Job salary is required",
                                         },
                                         max: {
-                                            value: 1000000,
+                                            value: 1000000000,
                                             message:
                                                 "Check number of job salary(too much)",
                                         },
@@ -413,11 +413,11 @@ const AddJob = () => {
                                         message: "Job description is required",
                                     },
                                     maxLength: {
-                                        value: 2000,
+                                        value: 20000,
                                         message: "Too long (max 2000char)",
                                     },
                                     minLength: {
-                                        value: 10,
+                                        value: 1,
                                         message: "Too short (max 10char)",
                                     },
                                 })}
